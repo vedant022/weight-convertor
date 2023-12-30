@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to right, #3494e6, #ec6ead);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: linear-gradient(to right, #3498db, #2c3e50); 
+  width: 90vw;
+  font-size: 18px;
+  max-width: 400px;
+  max-height:300px;
+  padding: 32px; 
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+  border-radius: 1em; 
+  color: #fff; 
+}
+
+}
+
+h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.calculator {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.display {
+  background-color: #f5f5f5;
+  padding: 10px;
+  text-align: right;
+  font-size: 1.5em;
+  border-bottom: 2px solid #ccc;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+button {
+  border: none;
+  padding: 15px;
+  font-size: 1.32px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.clear-button {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.operator-button, .equal-button {
+  background-color: #3498db;
+  color: white;
+}
+
+.zero-button {
+  grid-column: span 2;
+}
+
+button:hover {
+  background-color: #2c3e50;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.converter-box {
+  background: linear-gradient(to right, #3498db, #2c3e50);
+  margin-top: 32px;
+  padding: 32px;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+  border-radius: 0.6em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3 {
+  font-size: 32px;
+  margin-bottom: 1em;
+  color: #fff;
+}
+
+.converter-inputs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1em;
+}
+
+.converter-inputs input,
+.converter-inputs select {
+  flex: 1;
+  padding: 1em;
+  font-size: 1.32px;
+  border: none;
+  border-radius: 0.3em;
+  background-color: #ecf0f1;
+}
+
+.converter-inputs select {
+  margin-left: 10px;
+}
+
+.converter-inputs button {
+  background: linear-gradient(to right, #e74c3c, #c0392b);
+  color: white;
+  border: none;
+  padding: 0.7em 1.5em;
+  font-size: 1.32px;
+  cursor: pointer;
+  border-radius: 0.3em;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.converter-inputs button:hover {
+  background: linear-gradient(to right, #c0392b, #a93226);
+}
+
+.result {
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 1em;
+  color: #fff;
+}
+
+
